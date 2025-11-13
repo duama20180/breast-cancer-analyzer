@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+IDC_regular_ps50_idx5/
+
+.idea/
+*.iml
