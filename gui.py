@@ -17,11 +17,11 @@ root.title("Breast Cancer Classification")
 root.geometry("400x250")
 root.resizable(False, False)
 
-model_path = 'model_breast_cancer_cnn.h5'
+model_path = 'model_breast_cancer_cnn.keras'
 
 try:
     if not os.path.exists(model_path):
-        model_path = 'breast_cancer_cnn.h5'
+        model_path = 'breast_cancer_cnn.keras'
 
     model = load_model(model_path)
     print(f"Model loaded from {model_path}")

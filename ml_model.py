@@ -44,7 +44,7 @@ def load_data(dataset_path, max_images=None):
     return np.array(images), np.array(labels)
 
 dataset_path = 'IDC_regular_ps50_idx5'
-X, y = load_data(dataset_path, max_images=20000)
+X, y = load_data(dataset_path, max_images=85000)
 X = X / 255.0
 
 X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -104,4 +104,4 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
-model.save('breast_cancer_cnn.h5')
+model.save('breast_cancer_cnn.keras', save_format = 'keras')
